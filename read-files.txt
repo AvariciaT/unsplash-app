@@ -1,0 +1,22 @@
+consts: algo constante, colores, variables, routes, caches, cookies, etc.   [X]
+
+componets: componentes, estilos   [X]
+    common: componentes genericas, botones, etc   [X]
+
+    hooks: hooks creados por el usuario   [X]
+    layout: templates como footer o header   [X]
+
+assets: recursos utilizables, img, icons, illustrations   [X]
+
+stateManagement:  manejo de stado, recoi, redux   
+
+routes: publicas o privadas 
+
+styles:    [X]
+    pos-procesador, si es sass: mixin, colores, layouts(depende de su propio estilo)
+    se recomienda poner los estilos GLOBALES
+
+views: 
+    Home:    estilos, paginas
+    Login: 
+utils: funciones puras, fechas, llamadas al API    
