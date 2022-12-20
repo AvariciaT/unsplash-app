@@ -4,7 +4,7 @@ import { AddUnsplash, GridUnsplash } from './components';
 
 export const Unsplash = () => {
 
-  const [ unsplashs, setUnsplashs ] = useState( ['car'] );
+  const [ unsplashs, setUnsplashs ] = useState( ['ventana'] );
 
   function onAddUnsplash(onNewUnsplashs) {
     
