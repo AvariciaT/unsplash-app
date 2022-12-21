@@ -4,14 +4,14 @@ import { AddUnsplash, GridUnsplash } from './components';
 
 export const Unsplash = () => {
 
-  const [ unsplashs, setUnsplashs ] = useState( ['ventana'] );
+  const [ unsplashs, setUnsplashs ] = useState( ['agua','ventana'] );
 
-  function onAddUnsplash(onNewUnsplashs) {
+  function onAddUnsplash(newUnsplash) {
     
-    if (unsplashs.includes(onNewUnsplashs)) return;
+    if (unsplashs.includes(newUnsplash)) return;
 
     const temp = [... unsplashs];
-    temp.unshift(onNewUnsplashs);
+    temp.unshift(newUnsplash);
     setUnsplashs(temp);
     
   }
@@ -20,7 +20,7 @@ export const Unsplash = () => {
  <>
     <div className=" text-3xl bg-violet-500 text-slate-50 text-center">Unsplash</div>
   
-    <AddUnsplash onNewUnsplashs={onAddUnsplash} /> 
+    <AddUnsplash onNewUnsplash={onAddUnsplash} /> 
   
     {
       unsplashs.map( (unsplash) => ( <GridUnsplash key={unsplash} unsplash={unsplash}  /> ) )   
